@@ -6,6 +6,7 @@ const noToken = require("./config/notoken")
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
+
 const publicApiList = ['https://www.11e.top','http://www.11e.top']
 
 app.all("*", (req, res, next) => {

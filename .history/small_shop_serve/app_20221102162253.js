@@ -1,44 +1,53 @@
 const express = require("express")
+const cors = require("cors")
 const JWT = require("./util/jst")
 const { resolve } = require("path")
 const app = express()
 const noToken = require("./config/notoken")
+app.use(cors())
+
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-const publicApiList = ['https://www.11e.top','http://www.11e.top']
+// app.use((req,res,next)=>{
+//   let path = req.url
+//   if(path.indexOf("?")){
+//     path = path.split("?")[0]
+//   }
+//   // if(path.includes("/static/images")){
+//   //   console.log("找到")
+//   //   path = "/static/images"
+//   // }
+//   if(path.includes("/static/images")){
+//     next()
+//     return
+//   }else if(noToken.some(item=>path==item)){
+//     next()
+//     return
+//   }
+//   // if(noToken.some(item=>path==item)){
 
-app.all("*", (req, res, next) => {
-  if (publicApiList.includes(req.url)) {
-    res.header("Access-Control-Allow-Origin", req.headers.origin)
-    res.header("Access-Control-Allow-Headers", "content-type")
-    res.header("Access-Control-Allow-Headers",["content-type",'Authorization']);
-    res.header("Access-Control-Allow-Methods", 'DELETE,PUT,POST,GET,OPTIONS')
-    if (req.method.toLowerCase() == 'options') {
-    return res.send(200)
-    } else {
-      return  next()
-    }
-  } else {
-    if (AllowOriginList.includes(req.headers.origin)) {
-      res.header("Access-Control-Allow-Origin", req.headers.origin)
-      res.header("Access-Control-Allow-Headers", "content-type")
-      res.header("Access-Control-Allow-Headers",["content-type",'Authorization']);
-      res.header("Access-Control-Allow-Methods", 'DELETE,PUT,POST,GET,OPTIONS')
-      if (req.method.toLowerCase() == 'options') {
-        res.send(200)
-      } else {
-        next()
-      }
-    } else {
-      res.status(404).send({
-        code: 404,
-        msg: 'error'
-      })
-    }
-  }
-})
-
+//   // }
+//   const token = req.headers.authorization
+//   if(token){
+//     const payload = JWT.verifyToken(token)
+//     if(payload){
+//       // const {username,password} = payload
+//       // JWT.setToken({username,password},"15s")
+//       next()
+//     }else{
+//       res.status(401).send({
+//         code:401,
+//         msg:"token已失效"
+//       })
+//     }
+//   }else{
+//     res.status(401).send({
+//       code:401,
+//       msg:"token已失效"
+//     })
+//   }
+// })
 
 
 app.get("/", (req, res) => {

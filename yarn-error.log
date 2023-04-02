@@ -1,0 +1,26 @@
+Arguments: 
+  D:\nodeJS\node.exe C:\Users\薛林杰\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add ./
+
+PATH: 
+  C:\Program Files\WindowsApps\Microsoft.PowerShell_7.3.3.0_x64__8wekyb3d8bbwe;D:\Users\Miraitowa\Desktop;D:\Download\VMware\bin\;D:\QQ\Bin;C:\Program Files\Common Files\Oracle\Java\javapath;--defaults-file=;D:\Download\landrop\LANDrop;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32;C:\Windows\System32\Wbem;".;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Users\薛林杰\AppData\Roaming\npm;C:;Users\薛林杰\AppData\Local\Programs\Microsoft VS Code\bin;D:;QQ游戏\QQGameTempest\Hall.57773\";\Users\薛林杰\Pictures;Download\Git\Git\cmd;C:\Users\薛林杰\AppData\Local\Programs\Microsoft VS Code;Download\glnk画笔\gInk_v1.1.1;\Download\屏幕 拾色器\FastStone Capture;ndows\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\python;C:\Program Files\python\Scripts;D:\Download\bt\BtSoft\panel\script;D:\小程序开发\微信web开发者工具\dll;C:\Users\薛林;\AppData\Local\Microsoft\WindowsApps;C:\Users\薛林杰\AppData\Local\Programs\oh-my-posh\bin;Download\utils\SVGToImage-master\SVGToImage\bin\Debug;D:\Download\putty\;D:\A-A-前端\InitialTemplate;\Download\chrome\download;C:\Program Files\Pandoc\;D:\Download\nvm;D:\nodeJS;D:\Download\fastgithub\fastgithub_win-x64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;D:\Download\Git\Git\cmd;D:\A-A-Typora\workspace;D:\Users\Miraitowa\Desktop\vue\js;C:\Users\薛林杰\.cargo\bin; .;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:\Users\薛林杰\AppData\Roaming\npm;C:\Users\薛林杰\AppData\Local\Programs\Microsoft VS Code\bin;D:\Download\webstorm\WebStorm 2021.3.3\bin;;C:\Users\薛林杰\AppData\Local\Programs\oh-my-posh\bin;D:\qq_game\QQGameTempest\Hall.57933\;D:\Download\nvm;D:\nodeJS;C:\Users\薛林杰\AppData\Local\Microsoft\WindowsApps;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EINVAL: invalid argument, mkdir 'C:\Users\薛林杰\AppData\Local\Yarn\Cache\v6\npm-eact-0.0.0-ca65a628-07ec-4d59-95d3-3dc66d9d2f70-1680425724908\node_modules\D:\A-A-前端\React\项目'
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

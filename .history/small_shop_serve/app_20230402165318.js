@@ -1,10 +1,14 @@
 const express = require("express")
+const cors = require("cors")
 const JWT = require("./util/jst")
 const { resolve } = require("path")
 const app = express()
 const noToken = require("./config/notoken")
+app.use(cors())
+
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+
 
 const publicApiList = ['https://www.11e.top','http://www.11e.top']
 
